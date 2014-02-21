@@ -2,17 +2,17 @@ To setup onlinextract:
 ======================
 First install MongoDB:
 Import the MongoDB public GPG Key:
-	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+	$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 	Create a /etc/apt/sources.list.d/mongodb.list file 
-		echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+		$ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
 	 Reload repository:
-	 	sudo apt-get update
+	 	$ sudo apt-get update
 	 Install packages
-	 	sudo apt-get install mongodb-10gen
+	 	$ sudo apt-get install mongodb-10gen
 	 Start mongoDB service
-	 	sudo service mongodb start (sudo service mongodb stop; sudo service mongodb restart)
+	 	$ sudo service mongodb start (sudo service mongodb stop; sudo service mongodb restart)
 	 Verify
-	 	ps aux | grep mongo
+	 	$ ps aux | grep mongo
 	 Working with mongo
 	 $ mongo
 	 > db
