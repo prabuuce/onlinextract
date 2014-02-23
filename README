@@ -53,4 +53,11 @@ Import the MongoDB public GPG Key:
  	Open browser and enter the url http://localhost:5000
  	The rest is self explanatory
  	
+ (7) Create a new Eclipse pyDev project with the root of the onlinextract application as the root of the PyDev project in Eclipse
+ (8) Create a new interpreter instance and point to it from the project
+ (9) Link the external libraries to the site-packages of the current interpreter in the env
+ (10) When you run it, you will get an error saying "flaskext.mongoalchemy" not found. Locate the flaskext folder in 
+ 		site-packages and add to an empty __init__.py file to it to make the folder into a package. 
+ 	
+ 
 	
